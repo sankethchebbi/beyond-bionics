@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
+    <link rel="stylesheet" href="https://thesephist.github.io/blocks.css/src/reset.css" />
+    <link rel="stylesheet" href="https://thesephist.github.io/blocks.css/src/blocks.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <title>Bionics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .content {
+            font-family: 'EB Garamond', serif;
+            margin-top: 20px;
+        }
+        .content p {
+            text-align: justify;
+        }
+        @media (max-width: 768px) {
+            .header button {
+                flex: 1 0 auto;
+                margin: 5px;
+            }
+        }
+        a {
+    text-decoration: none; /* Removes underlines */
+    color: inherit; /* Makes the link color the same as the surrounding text */
+}
+a:hover {
+    color: blue; /* Changes the color to blue when hovered over */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="accent block" onclick="location.href='/index.html'">home</button>
+            <button class="block" onclick="location.href='/about.html'">about</button>
+            <button class="block" onclick="location.href='/work.html'">work</button>
+            <button class="block" onclick="location.href='mailto:sanketh@duck.com'">email</button>
+        </div>
+        <div class="content">
+            <h1><a href="/">Transradial Prosthesis</a></h1>
+            <h2>using EEG-controlled robot gripper</h2>
+            <p style="font-size: 23px;">
+                This project presents the design, implementation, and analysis of an innovative EEG-controlled robot gripper tailored for individuals with transradial prostheses. Leveraging advanced prosthetic technology, the gripper integrates EEG sensors to harness user attention as a means of actuation. The project prioritizes user experience, incorporating gecko skin for enhanced gripping functionality. Through a comprehensive ANSYS analysis, we validate the gripper's structural integrity under load conditions, ensuring safety and reliability. The gripper's versatility is tested through usability evaluations across diverse user groups, focusing on improving post-fitting quality of life. The use of 3D printing, specifically Fused Deposition Modeling (FDM), allows for customized and adaptable gripper fabrication. Our findings demonstrate the successful integration of EEG technology, biomechanics, and additive manufacturing in developing an intuitive and efficient prosthetic solution. This research contributes to the evolution of assistive technologies, emphasizing user-centric design, robustness, and practical functionality. The presented gripper showcases a promising advancement in the field, with implications for improving the daily lives of individuals with limb differences, allowing them to participate in daily life.
+                <br>
+              
+            </p>
+            <p> <h2>Working prototype</h2>
+                <br>
+                <Video width="600" height="400" controls>
+                    <source src="/docs/Capstone_Working.mp4" type="video/mp4">
+                </Video>
+            </p>
+            <p>
+                <h2>Report</h2>
+                <iframe src="/docs/report.pdf" width="750" height="800"></iframe>
+            </p>
+           
+            </div>
+    </div>
+</body>
+</html>

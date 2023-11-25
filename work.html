@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
+    <link rel="stylesheet" href="https://thesephist.github.io/blocks.css/src/reset.css" />
+    <link rel="stylesheet" href="https://thesephist.github.io/blocks.css/src/blocks.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <title>Work</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .content {
+            font-family: 'EB Garamond', serif;
+            margin-top: 20px;
+        }
+        .content p {
+            text-align: justify;
+        }
+        @media (max-width: 768px) {
+            .header button {
+                flex: 1 0 auto;
+                margin: 5px;
+            }
+        }
+        a {
+    text-decoration: none; /* Removes underlines */
+    color: inherit; /* Makes the link color the same as the surrounding text */
+}
+a:hover {
+    color: blue; /* Changes the color to blue when hovered over */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="block" onclick="location.href='/index.html'">home</button>
+            <button class="block" onclick="location.href='/about.html'">about</button>
+            <button class="accent block" onclick="location.href='/work.html'">work</button>
+            <button class="block" onclick="location.href='mailto:sanketh@duck.com'">email</button>
+        </div>
+        <div class="content">
+            <h1><a href="/">Work</a></h1>
+            <p style="font-size: 23px;">
+                <h2>Project Outline 2023-24</h2>
+        <!-- Start of project steps list -->
+        <ol style="font-size: 23px; text-align: left;">
+            <li>Development of a bionic arm for amputees whose hands are amputated below the elbow, i.e., transradial prosthesis using SolidWorks and analyze the design using Ansys Workbench to effectively find load ratings of the arm.</li><br>
+            <img src="/docs/orthogonal.png" width="400" style="display: block; margin-left: auto; margin-right: auto;" /><figcaption style="display: block; margin-left: auto; margin-right: auto; text-align: center; font-size: 20;">Orthogonal View of the Arm</figcaption><br>
+            <li>Analyze the electrical activity of the brain using an EEG sensor via electrodes affixed to the forehead.</li>
+            <li>Sorting the brain waves according to the frequencies like Alpha, Delta, etc., and exploring them under various conditions. Include a subsection or figure for the Brain wave frequency chart here if needed.</li>
+            <img src="/docs/mindwaves.png" width="500" height="300" style="display: block; margin-left: auto; margin-right: auto;"/>
+            <li>Make use of a microcontroller such as Arduino and Bluetooth module HC-05 Bluetooth Transceiver to receive and process the data from the EEG sensor.</li>
+            <li>Using a Bluetooth module to interpret the data received and display it on the serial monitor in terms of attention values.</li>
+            <li>When attention level reaches a certain threshold, the servo motor is programmed to move by a certain degree in order to perform a function for a suitable application.</li>
+            <li>With slicing software, we can convert 3D digital models into printing instructions for a specific 3D printer to create an object. In 3D printing technology, 3D objects are created by adding material layer by layer. Slicing software virtually "slices" 3D models into many horizontal 2D layers that are later printed one after another.</li>
+            <li>With the instructions from the slicing software, we can 3D print the prosthetic arm and test it physically.</li>
+            <li>After 3D printing, we assemble the entire arm with fasteners to actuate the end-effectors. Run a final test to make sure all the components work together.</li>
+        </ol>
+            </p>
+            <hr>
+            <p style="font-size: 23px;">
+                <b>EEG - (Electroencephalography)</b> sensors are used to measure the electrical activity in the brain.
+                EEG sensors are often used in research, medicine, and other fields to help understand how the
+                brain works and to diagnose conditions such as epilepsy.While there are certainly more advanced EEG sensors available, the FT&S MindLink EEG headband is popular sensor due to its ease of use and affordability. It uses dry electrodes, making it less messy and more convenient than
+                wet electrode systems. The headband is also lightweight and comfortable.<br><br>
+                <img src="/docs/EEG_headband.png" style="display: block; margin-left: auto; margin-right: auto;"/>
+                <figcaption style="font-size: 20px;">FT&S MindLink EEG Headband</figcaption>
+            </p>
+            <hr>
+            <p style="font-size: 23px;">
+                <b>Cys-S8218 Servo Motor</b> - 
+                A servo motor is a crucial component in robotics and automation systems, designed to
+                provide precise control over angular position, velocity, and acceleration. Typically, servos
+                operate based on feedback control systems, using a control signal to command the motor to
+                move to a specific position. The servo offers a stall torque of 38kg.cm at 6.0V, making it suitable
+                for tasks requiring substantial force. Its control system utilizes Pulse Width Control, with a
+                neutral point at 1500µsec. With its specific electrical characteristics and robust design, the
+                CYS-S8218 servo motor is an integral component for applications demanding precise and
+                powerful motion control.
+                <br><br>
+                <img src="/docs/servo.png" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="300"/>
+                <figcaption style="font-size: 20px;">S8218 Servo Motor</figcaption>
+                </p> 
+                <hr>
+                <p style="font-size: 23px;">
+                <b>Arduino Uno</b> -
+                The Arduino Uno is a versatile microcontroller board widely used in electronics projects and
+                prototyping, features digital and analog input/output pins, making it suitable for various
+                applications.
+                The Arduino Uno operates on a 5V supply voltage and is programmed using the Arduino IDE,
+                a user-friendly development environment. In our project, we plan to integrate the Arduino Uno to control the CYS-S8218 servo motor.
+                Using the digital output pins, we send pulse-width modulation (PWM) signals to the servo,
+                specifying the desired position. The servo's control wire will be connected to one of the digital
+                pins, allowing the Arduino to precisely manipulate the motor's angular position.
+                <br>
+                <br>
+                <img src="/docs/arduino.png" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="300"/>
+                <figcaption style="font-size: 20px;">Arduino Uno</figcaption>
+                </p>
+                <hr>
+                <p style="font-size: 23px;">
+                    <b>HC-05</b> 
+                    Bluetooth module widely employed for wireless communication in electronic
+                    projects. With its serial communication capabilities, the HC-05 facilitates the establishment of
+                    Bluetooth connections between devices. In our project, we aim to integrate the HC-05 module
+                    to establish a wireless link between an EEG (electroencephalogram) sensor and our central
+                    processing unit, an Arduino . The EEG sensor will transmit attention-related data to the HC-05
+                    module, which will then relay this information to the microcontroller. Our programming logic
+                    on the microcontroller will interpret the received data and potentially trigger actions or
+                    display information based on the user's attention levels .This wireless connection enhances the flexibility and mobility of our EEG-based project,
+                    allowing users to interact with the system without being tethered to physical connections. <br><br>
+                    <img src="/docs/hc05.png" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="300" />
+                    <figcaption style="font-size: 20px;">HC05 Module</figcaption>
+                    </p>
+                    <hr>
+                    <p style="font-size: 23px;">
+                       <img src="/docs/circuit.png" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="300" />
+                       <figcaption style="font-size: 20px;"><b>Circuit Diagram</b></figcaption>
+                    </p>
+                    <hr>
+                    <p style="font-size: 23px;">
+
+                        <b>Condition Checking</b> - 
+
+                        The code first checks if the debugging output is disabled (!DEBUGOUTPUT) and if a significant data packet (bigPacket) is received.<br>
+                        <b>LED Control:</b>
+
+                        If the received data packet has good quality (poorQuality == 0), the LED is set to HIGH; otherwise, it is set to LOW. This serves as a visual indicator of the signal quality.<br>
+                        <b>Attention Monitoring:</b>
+
+                        The code prints the "Attention" value to the serial monitor, indicating the user's attention level based on EEG readings.<br>
+                        <b>Servo Activation:</b>
+
+                        If the attention level exceeds 60 and the servo is not already activated (!servoActivated), the servo motor is attached to pin 9, activated, and instructed to move. The servo is then deactivated after a delay, mimicking a gripping motion.<br>
+                        <b>Servo Deactivation:</b>
+
+                        If the servo was previously activated (servoActivated), it is detached to conserve resources and prepare for potential future activations.
+                        <br>
+                        <script src="https://gist.github.com/sankethchebbi/e214899f574967e6e5c0ae3dbcb565fd.js"></script>
+                        <br>
+                </p>
+            </div>
+    </div>
+</body>
+</html>
