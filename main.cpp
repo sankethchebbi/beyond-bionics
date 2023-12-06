@@ -96,9 +96,9 @@ void loop() {
             myservo.attach(9);
             servoActivated = true;
             Serial.println("\nActivating servo motor!");
-            myservo.write(30);
+            myservo.write(10);
             delay(5000);
-            myservo.write(120);
+            myservo.write(115);
           } else {
             if (servoActivated) {
               myservo.detach();
